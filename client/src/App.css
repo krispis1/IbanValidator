@@ -1,0 +1,156 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: calc(10px + 1vmin);
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: calc(10px + 1vmin);
+  cursor: text;
+  top: 20px;
+}
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: calc(10px + 1vmin);
+  color: #9b9b9b;
+}
+.form__field:focus {
+  padding-bottom: 6px;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #119950, #11803b);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: calc(10px + 1vmin);
+  color: #119950;
+  font-weight: 700;
+}
+
+.wrongFormat {
+  border-width: 1px;
+  border-color: rgb(243, 31, 31);
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #119950;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: calc(10px + 1vmin);
+  padding: 20px;
+  width: 60%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: none;
+  color: white;
+  background-color: #282c34;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: calc(10px + 1vmin);
+  transition-duration: 0.4s;
+}
+
+.upload-btn-wrapper:hover button {
+  background-color: white;
+  color: #282c34;
+}
+
+.upload-btn-wrapper:hover {
+  cursor:progress;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+#warning {
+  font-size: calc(10px + 1vmin);
+  color: rgb(243, 31, 31);
+}
