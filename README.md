@@ -20,5 +20,5 @@
 Navigate to each folder using command line, or visit each folder with file explorer, **shift + right click** inside the folder and select "Open PowerShell window here" (three instances of command line or PowerShell should now be running).
 
 ![EXAMPLE1](https://i.ibb.co/6wcV43d/ezgif-com-gif-maker.gif)
-- In each of the command line of PowerShell window type `npm install` and wait until all the processed complete.
+- In each of the command line of PowerShell window type `npm install` and wait until all of the processes are completed.
 - In each of the command line of PowerShell window type `npm start` (all three services must be started). A browser window with the application should pop-up. If it doesn't, visit [http://localhost:3000](http://localhost:3000) on your browser.
