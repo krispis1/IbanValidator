@@ -9,3 +9,9 @@
 2. List of IBANs validation (accepts .txt files only formatted as shown below)
 
 ![FORMAT EXAMPLE](https://i.ibb.co/SQtvMDc/kodai.png)
+
+# How to setup
+
+### Windows
+
+- Go to [Node.js](https://nodejs.org/en/), download and install the latest version.
