@@ -34,4 +34,4 @@ Navigate to each folder using a separate terminal window.
 
 ### Known issues
 
-- Clicking "Upload and validate" opens two windows for both "<filename>_valid.csv" and "<filename>_bank.csv" files to be downloaded. The browser may block one of the pop-ups and only one of the files will be sent to the client. To avoid this, allow the pop-ups and click "Upload and validate" one more time.
+- Clicking "Upload and validate" opens two windows for both "filename_valid.csv" and "filename_bank.csv" files to be downloaded. The browser may block one of the pop-ups and only one of the files will be sent to the client. To avoid this, allow the pop-ups and click "Upload and validate" one more time.
