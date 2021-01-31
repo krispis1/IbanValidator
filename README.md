@@ -18,3 +18,5 @@
 - Clone the repository or download the zipped file and unzip it.
 - The repository directory will have three folders - "client", "ws1" and "ws2".
 Navigate to each folder using command line, or visit each folder with file explorer, shift + right click inside the folder and select "Open PowerShell window here" (three instances of command line or PowerShell should now be running).
+
+![EXAMPLE1](https://i.ibb.co/6wcV43d/ezgif-com-gif-maker.gif)
