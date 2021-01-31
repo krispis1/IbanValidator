@@ -24,7 +24,7 @@ class App extends Component {
   }
 
   validateHandler = () => {
-    if (regex.test(this.state.inputValue) && this.state.inputValue.length == 20) {
+    if (regex.test(this.state.inputValue) && this.state.inputValue.length === 20) {
       axios.get("http://localhost:9000?iban=" + this.state.inputValue)
         .then((res) => {
           var validationRes = res.data.split(';');
